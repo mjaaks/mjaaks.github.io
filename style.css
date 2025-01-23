@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --bgColor: rgba(12, 12, 12, 0.4);
+    --fontcolor : #0c0c0c;
+    --accentColor: #ffffff;
+    --font: 'Arvo', serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('https://i.pinimg.com/originals/f1/eb/cf/f1ebcf7e1934fe7dc416f7a5cf449060.gif');
+    background-size: cover;
+    color: var(--accentColor);
+    height: 80vh;
+}
+
+a{
+    color: var(--accentColor);
+    text-decoration: none;
+}
+
+#userPhoto{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--accentColor);
+}
+
+#userName{
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-family: var(--font);
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+#links{
+    max-width: 675px;
+    width: 100%;
+}
+
+#playlists{
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.link{
+    display: block;
+    background-color: var(--bgColor);
+    backdrop-filter: blur(5px);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 13px;
+    text-transform: none;
+    font-size: 1rem;
+    border: solid var(--accentColor) 1px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.link:hover{
+    color: var(--fontcolor);
+    background-color: var(--accentColor);
+    font-style: italic;
+}
+
+.footer{
+    position: fixed;
+    bottom: 10px;
+    font-size: 17px;
+}
